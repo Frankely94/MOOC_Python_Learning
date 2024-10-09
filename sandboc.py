@@ -38,7 +38,7 @@ else:
 '''
 
 
-value = int(input('Value of gift:'))
+value = float(input('Value of gift:'))
 
 if value < 5000:
     print('No tax!')
@@ -56,4 +56,4 @@ elif value >200000 and value <=1000000:
     print(f"Amount of tax: {x} euros")   
 elif value >1000000:
     x = (142000+(value-1000000)*0.17)
-    print(f"Amount of tax: {x} euros")  
+    print(f"Amount of tax: {x} euros")   
