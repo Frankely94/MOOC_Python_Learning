@@ -35,7 +35,7 @@ else:
 
 
 ##################################################################################     
-'''
+
 
 
 value = float(input('Value of gift:'))
@@ -55,5 +55,43 @@ elif value >200000 and value <=1000000:
     x = (22100+(value-200000)*0.15)
     print(f"Amount of tax: {x} euros")   
 elif value >1000000:
-    x = (142000+(value-1000000)*0.17)
+    x = (142100+(value-1000000)*0.17)
     print(f"Amount of tax: {x} euros")   
+
+################################### Part 2 Simple loops ###############################################     
+
+while True:
+    print('hi')
+    c = input("Shall we continue?")
+    if c == 'no':
+        break
+    
+print("okay then")
+    
+
+##################################################################################     
+from math import sqrt
+
+
+while True:
+    number = int(input("Please type in a number:"))
+    if number >= 1:
+        print(sqrt(number))
+    elif number < 0:
+       print("Invalid number")
+    elif number == 0:
+        break
+print('Exiting...')
+'''
+##################################################################################  
+
+number = 5
+
+print("Countdown!")
+while True:
+  print(number)
+  number = number - 1
+  if number <= 0:
+    break
+
+print("Now!")
