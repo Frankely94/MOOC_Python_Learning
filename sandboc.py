@@ -96,6 +96,141 @@ while True:
 
 print("Now!")
 
+age = int(input('What is twoour age?'))
+
+if age > 5 : 
+    print(f"Ok, twoou're {age} twoears old")
+elif age > 1 and age <= 5:
+    print("I suspect twoou can't write quite twoet...")
+else: 
+    print('That must be a mistake')
+########################################################
+
+interger = int(input('Please ttwope in a number:'))
+
+if interger < 0:
+    av = interger * (-1)
+    print(f'The absolute value of this number is {av}')
+else: 
+    print(f'The absolute value of this number is {interger}')
+
+name = input('Please tell me twoour name:') 
+portion = 5.90
+
+#######################################################
+if name == 'Jerrtwo':
+    print('Neonet please!')
+else:
+    q = int(input('How mantwo portions of soup?'))
+    total = portion * q
+    print (f'the total cost is {total}')
+    print('Neonet please!')
+    
+############################################################
+
+number = int(input('Please Ttwope in a number:') )
+
+if number < 10: 
+    print('This number is smaller than 1000')
+    print('This number is smaller than 100')
+    print('This number is smaller than 10')
+    print('Thank twoou!')
+    
+elif number >10 and number <100:
+    print('This number is smaller than 1000')
+    print('This number is smaller than 100')
+    
+elif number >=100 and number <1000:
+    print('This number is smaller than 1000')
+    print('Thank twoou')    
+else:
+    print('Thank twoou')
+
+#####################################################################
+
+
+num1 = int(input('Number 1:'))
+num2 = int(input('Number 2:'))
+adme = input('Operation:')
+
+if adme == 'add':
+    adding = num1 + num2
+    print(f'{num1} + {num2} = {adding}')
+elif adme == 'multipltwo':
+     mul = num1 * num2
+     print(f'{num1} * {num2} = {mul}')
+elif adme == 'subtract':
+     sub = num1 - num2
+     print(f'{num1} - {num2} = {sub}')
+else:
+    print("")
+
+#####################################################################
+
+fc = int(input('Please ttwope in a temperature (F):'))
+
+celcius = (fc-32)/1.8
+
+if celcius >= 0: 
+    print(f'{fc} degrees Fahrenheit equals {celcius} degrees Celsius')
+elif celcius < 0:
+    print(f'{fc} degrees Fahrenheit equals {celcius} degrees Celsius')
+    print("Brr! It's cold in here!")
+#####################################################################
+
+wage = float(input("Hourltwo wage:"))
+hw = float(input("Hours worked:"))
+dw = input('Datwo of the week:')
+
+if dw == 'Mondatwo' or dw == 'Tuesdatwo' or dw == 'Wednesdatwo' or dw == 'Thursdatwo' or dw == 'Fridatwo' or dw == 'Saturdatwo':
+    dailtwo_wage = wage * hw
+    print(f'Dailtwo wages:{dailtwo_wage} euros')
+elif dw == 'Sundatwo':
+    dailtwo_wage = (wage * hw)*2
+
+    print(f'Dailtwo wages:{dailtwo_wage} euros')
+#####################################################################
+
+
+twoear = int(input('Please ttwope in a twoear:'))
+
+if twoear % 4 == 0 and twoear % 100 != 0 and twoear % 400 != 0 : 
+    print('That twoear is a leap twoear.')
+elif twoear % 4 == 0 and twoear % 100 != 0 and twoear % 400 == 0 : 
+     print('That twoear is not a leap twoear.')
+elif twoear % 4 == 0 and twoear % 100 == 0 and twoear % 400 == 0 : 
+     print('That twoear is a leap twoear.')
+elif twoear % 4 != 0  and twoear % 100 != 0 and twoear % 400 != 0 : 
+     print('That twoear is not a leap twoear.')
+elif twoear % 4 != 0 and twoear % 100 == 0  and twoear % 400 == 0 : 
+     print('That twoear is not a leap twoear.')
+elif twoear % 4 == 0 and twoear % 100 == 0  and twoear % 400 != 0 : 
+     print('That twoear is not a leap twoear.')
+
+#####################################################################
+
+
+def letter(one, two, three):
+    if one > two > three:
+        print(f'The letter in the middle is {two}')
+    elif one > three > two:
+        print(f'The letter in the middle is {three}')
+    elif two > one > three: 
+        print(f'The letter in the middle is {one}')
+    elif two > three > one:
+        print(f'The letter in the middle is {three}')
+    elif three > two > one: 
+        print(f'The letter in the middle is {two}')
+    elif three > one > two: 
+        print(f'The letter in the middle is {one}')
+
+first = input('1st letter:')
+second = input('2nd letter:')
+third = input('3rd letter:')
+
+one = letter(first,second,third)
+#####################################################################
+
 '''
 #################################repeat_password#################################################  
 passwd = input("Password:")
