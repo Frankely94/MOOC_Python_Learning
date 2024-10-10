@@ -82,7 +82,7 @@ while True:
     elif number == 0:
         break
 print('Exiting...')
-'''
+
 ##################################################################################  
 
 number = 5
@@ -95,3 +95,19 @@ while True:
     break
 
 print("Now!")
+
+'''
+#################################repeat_password#################################################  
+passwd = input("Password:")
+passwd1 = input("Repeat Password:")
+while True: 
+       
+    if passwd1 != passwd:
+        print('They do not match!')
+        passwd1 = input("Repeat Password:")
+
+    elif passwd1 == passwd:
+        break
+        
+    
+print('User account created!')
