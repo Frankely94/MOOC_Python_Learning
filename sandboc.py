@@ -231,7 +231,7 @@ third = input('3rd letter:')
 one = letter(first,second,third)
 #####################################################################
 
-'''
+
 #################################repeat_password#################################################  
 passwd = input("Password:")
 passwd1 = input("Repeat Password:")
@@ -246,3 +246,20 @@ while True:
         
     
 print('User account created!')
+
+'''
+#################################rWhile lops#################################################  
+count = 0 
+while True: 
+    pin = input("PIN:")
+    count = count + 1
+    if pin == "4321":
+        good = True
+        break
+    elif pin != "4321":
+        print("Wrong")
+    
+if good == True and count <= 1: 
+    print(f"Correct! It took you {count} attempt")
+elif good == True and count > 1: 
+    print(f"Correct! It took you {count} attempts")
