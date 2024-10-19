@@ -192,20 +192,20 @@ elif dw == 'Sundatwo':
 #####################################################################
 
 
-twoear = int(input('Please ttwope in a twoear:'))
+year = int(input('Please type in a year:'))
 
-if twoear % 4 == 0 and twoear % 100 != 0 and twoear % 400 != 0 : 
-    print('That twoear is a leap twoear.')
-elif twoear % 4 == 0 and twoear % 100 != 0 and twoear % 400 == 0 : 
-     print('That twoear is not a leap twoear.')
-elif twoear % 4 == 0 and twoear % 100 == 0 and twoear % 400 == 0 : 
-     print('That twoear is a leap twoear.')
-elif twoear % 4 != 0  and twoear % 100 != 0 and twoear % 400 != 0 : 
-     print('That twoear is not a leap twoear.')
-elif twoear % 4 != 0 and twoear % 100 == 0  and twoear % 400 == 0 : 
-     print('That twoear is not a leap twoear.')
-elif twoear % 4 == 0 and twoear % 100 == 0  and twoear % 400 != 0 : 
-     print('That twoear is not a leap twoear.')
+if year % 4 == 0 and year % 100 != 0 and year % 400 != 0 : 
+    print('That year is a leap year.')
+elif year % 4 == 0 and year % 100 != 0 and year % 400 == 0 : 
+     print('That year is not a leap year.')
+elif year % 4 == 0 and year % 100 == 0 and year % 400 == 0 : 
+     print('That year is a leap year.')
+elif year % 4 != 0  and year % 100 != 0 and year % 400 != 0 : 
+     print('That year is not a leap year.')
+elif year % 4 != 0 and year % 100 == 0  and year % 400 == 0 : 
+     print('That year is not a leap year.')
+elif year % 4 == 0 and year % 100 == 0  and year % 400 != 0 : 
+     print('That year is not a leap year.')
 
 #####################################################################
 
@@ -247,7 +247,7 @@ while True:
     
 print('User account created!')
 
-'''
+
 #################################rWhile lops#################################################  
 count = 0 
 while True: 
@@ -263,3 +263,60 @@ if good == True and count <= 1:
     print(f"Correct! It took you {count} attempt")
 elif good == True and count > 1: 
     print(f"Correct! It took you {count} attempts")
+
+'''
+#################################rWhile lops################################################# 
+
+
+
+count = 0
+while True: 
+    year = int(input("Year:"))
+    if year % 400 == 0 and year % 100 == 0:
+        year = year +1 
+        t = True   
+        break
+    elif year % 4 == 0 and year % 100 != 0:
+        year = year +1  
+        t = True
+        
+        break
+    else:
+        year = year +1 
+        t = False
+       
+        break
+
+while year > count:
+    
+    year = year + 1
+    if year % 400 == 0 and year % 100 == 0:
+        break
+    
+    elif year % 4 == 0 and year % 100 != 0:
+           
+        break
+    else:
+        while (year % 400 != 0 and year % 100 != 0) and (year % 4 != 0 and year % 100 == 0):
+            print(year)
+            
+            
+    
+        
+print(year)
+
+
+       
+       
+   
+    
+  
+
+
+
+      
+    
+    
+        
+
+    
