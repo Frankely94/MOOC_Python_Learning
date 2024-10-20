@@ -269,54 +269,44 @@ elif good == True and count > 1:
 
 
 
-count = 0
+year = int(input("Year:"))
+
 while True: 
-    year = int(input("Year:"))
+    
     if year % 400 == 0 and year % 100 == 0:
-        year = year +1 
+       
         t = True   
         break
-    elif year % 4 == 0 and year % 100 != 0:
-        year = year +1  
-        t = True
+    elif year % 4 == 0 and year % 100 != 0 :
+        t = True  
+        break
+    elif year % 4 == 0 :
         
+        t = True  
         break
     else:
-        year = year +1 
-        t = False
-       
+        t = False       
         break
+    
+#The rule is that if the year is divisible by 100 and not divisible by 400, leap year is skipped. 
+# The year 2000 was a leap year, for example, but the years 1700, 1800, and 1900 were not.  
+# The next time a leap year will be skipped is the year 2100. 
 
-while year > count:
-    
-    year = year + 1
-    if year % 400 == 0 and year % 100 == 0:
-        break
-    
-    elif year % 4 == 0 and year % 100 != 0:
-           
-        break
-    else:
-        while (year % 400 != 0 and year % 100 != 0) and (year % 4 != 0 and year % 100 == 0):
-            print(year)
-            
-            
-    
+j = year
+while True:
+      if t == True:
+            x = year +4
+            if x % 400 != 0 and x % 100 == 0 :
+              print(f"The next leap year after {year} is {x+4}")
+              break
+            else:
+                print(f"The next leap year after {year} is {x}")
+                break        
+      elif t == False:
+       
         
-print(year)
-
-
-       
-       
-   
-    
-  
-
-
-
-      
-    
-    
+        if (j % 400 == 0 and j % 100 == 0  ) or (j % 4 == 0 and j % 100 != 0):
+              print(f"The next leap year after {year} is {j}")
+              break
+        j = j + 1
         
-
-    
