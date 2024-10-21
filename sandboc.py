@@ -264,7 +264,6 @@ if good == True and count <= 1:
 elif good == True and count > 1: 
     print(f"Correct! It took you {count} attempts")
 
-'''
 #################################rWhile lops################################################# 
 
 
@@ -286,11 +285,7 @@ while True:
         break
     else:
         t = False       
-        break
-    
-#The rule is that if the year is divisible by 100 and not divisible by 400, leap year is skipped. 
-# The year 2000 was a leap year, for example, but the years 1700, 1800, and 1900 were not.  
-# The next time a leap year will be skipped is the year 2100. 
+        break 
 
 j = year
 while True:
@@ -310,3 +305,20 @@ while True:
               break
         j = j + 1
         
+'''
+#################################rWhile lops################################################# 
+
+sentence = input('Please type in a word:')
+s = []
+while True:
+    
+    if sentence == 'end' :
+        break
+    s.append(sentence)
+    sentence = input('Please type in a word:')
+    if sentence == s[-1]:
+        break
+
+print(' '.join(s))  
+
+
