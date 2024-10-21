@@ -305,7 +305,7 @@ while True:
               break
         j = j + 1
         
-'''
+
 #################################rWhile lops################################################# 
 
 sentence = input('Please type in a word:')
@@ -320,5 +320,77 @@ while True:
         break
 
 print(' '.join(s))  
+
+
+
+#################################rWhile lops################################################# 
+
+mean = 0
+add = 0
+numbers = 0
+p = 0
+n = 0 
+print('Please type in integer numbers. Type in 0 to finish.') 
+while True:
+    
+    number = int(input("Number:"))
+    if number == 0:
+        break
+    numbers = numbers +1
+    add = add + number
+    mean = add / numbers
+    if number >=0:
+        p = p +1
+    elif number < 0 : 
+        n= n +1 
+
+
+
+
+print(f'Numbers typed in {numbers}')
+print(f'The sum of the numbers is {add}')
+print(f'The mean of the numbers is {mean}')
+print(f'Positive numbers {p}')
+print(f'Negative numbers {n}')
+
+
+
+
+#################################While lops################################################# 
+
+ 
+count = 2 
+while count >=2 and count <=30:
+    if count % 2 == 0:
+        print(count)
+    count = count +1
+
+
+#################################While lops################################################# 
+ # Fix the program
+print("Are you ready?")
+number = int(input("Please type in a number: "))
+while number > 0:
+    print(number)
+    number = number - 1
+    
+print("Now!")
+
+''' 
+#################################While lops################################################# 
+ # Fix the program
+
+number = int(input("Please type in a number: "))
+s = number - 1
+v= 1 
+while v <=s:
+    print(v)
+    
+    v = v + 1
+    
+
+
+
+
 
 
