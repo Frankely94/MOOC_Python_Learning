@@ -381,13 +381,14 @@ print("Now!")
  # Fix the program
 
 number = int(input("Please type in a number: "))
-s = number - 1
+
 v= 1 
-while v <=s:
+c = 0
+while v <= number:
     print(v)
     
-    v = v + 1
-    
+    v = v * 2
+     
 
 
 
