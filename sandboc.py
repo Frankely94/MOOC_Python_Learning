@@ -376,22 +376,60 @@ while number > 0:
     
 print("Now!")
 
-''' 
 #################################While lops################################################# 
  # Fix the program
 
 number = int(input("Please type in a number: "))
 
 v= 1 
-c = 0
+
 while v <= number:
     print(v)
     
     v = v * 2
      
 
+#################################While lops################################################# 
+ # Fix the program
+number = int(input("Upper limit:"))
+
+v= 1 
+base = int(input('Base:'))
+while v <= number:
+    print(v)
+    
+    v = v * base
 
 
+#################################While lops################################################# 
+
+limit = int(input("Limit:"))
+n= 1
+m = 0 
+while m < limit:
+    print(n)
+    m = m + n
+    n = n + 1
+print(m)
 
 
+#################################While lops################################################# 
 
+
+limit = int(input("Limit:")) #2
+num = 1
+a = 0 
+l = [] 
+
+
+while a < limit:
+    l.append(str(num))
+    x = ' + '.join(l)
+    a = a + num
+    num = num + 1
+
+print(f'The consecutive sum: {x} = {a}')
+
+
+'''
+#################################While lops################################################# 
