@@ -431,5 +431,32 @@ while a < limit:
 print(f'The consecutive sum: {x} = {a}')
 
 
+#################################Working with strings ################################################# 
+
+n = 10 
+row = "^"
+
+while n> 0 :
+    
+    print(n*" " + row )         # this line prints the spaces plus the symbols. the space start a 10 and goes down to one
+    n= n -1
+    row = row + "^^"
+
+
+########################################################################################
+
+s = input("Please type in a string:")
+a = int(input("Please type in an amount:"))
+
+print(a*s)
+
 '''
-#################################While lops################################################# 
+########################################################################################
+stringa = input("Please type in string 1:")
+stringb = input("Please type in string 2:")
+if len(stringa) > len(stringb):
+    print(f"{stringa} is longer")
+elif len(stringa) < len(stringb):
+    print(f"{stringb} is longer")
+else:
+    print("The strings are equally long")
