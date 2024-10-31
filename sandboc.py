@@ -450,7 +450,7 @@ a = int(input("Please type in an amount:"))
 
 print(a*s)
 
-'''
+
 ########################################################################################
 stringa = input("Please type in string 1:")
 stringb = input("Please type in string 2:")
@@ -460,3 +460,100 @@ elif len(stringa) < len(stringb):
     print(f"{stringb} is longer")
 else:
     print("The strings are equally long")
+
+########################################################################################
+
+letter = input("Enter letter ")
+c = 0
+d = -1 
+while len(letter) > c:
+    print(letter[d])
+    
+    d = d -1
+    c = c+1
+
+
+########################################################################################
+string1 = input("Please type in a string: ")
+
+
+if string1[-2] != string1[1]:
+    print("The second and the second to last characters are different")
+elif string1[-2] == string1[1]:
+    print(f"The second and the second to last characters are {string1[1]}")
+''
+########################################################################################
+
+w = int(input("With:"))
+h = "#"
+print(h*w)
+
+
+########################################################################################
+w = int(input("With:"))
+hei = int(input("Height:"))
+h = "#"
+
+ancho = h*w
+
+for x in range(0,hei):
+    x = ancho
+    print(x)
+
+########################################################################################
+
+
+
+w = "-"
+while True: 
+    letter = input("Please type in a string: ")
+    print(letter)
+    print(w *len(letter))
+    if letter == "":
+        break
+
+########################################################################################
+#option 1
+s = input("Please type in a string:")
+c = len(s)
+v = "*"
+if c < 20:
+    k = (c - 20)*(-1)
+
+    print(f"{k*v}{s}")
+else:
+    print("nope")
+    
+#option 2
+s = input("Please type in a string:")
+st = (len(s) - 20)* (-1)
+star = '*'*st
+print(f"{star}{s}")
+
+#option 3
+
+s = input("Please type in a string:")
+n = 20
+b= "*"
+while len(s)< n: #dos
+    
+    n= n- len(s)
+    if n + len(s) == 20:
+        
+        break
+print(f"{b*n}{s}" )      
+    
+'''        
+    
+#######################################################################################
+
+c = input("Word: ")
+n= 30
+side = n-29
+d = int(n-2)/2
+k = "* "
+b=""
+
+print(f"{k*n}")
+print(f"{side}{b*d}{c}{b*d}{side}")
+print(f"{k*n}")
