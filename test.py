@@ -29,3 +29,19 @@ print(f'Negative numbers {n}')
 
               
 
+w = input('Word: ')
+c = (len(w)-30)*(-1)
+ 
+if c % 2 ==0:
+    l = (c//2)*"*"
+    print("*"*30)
+    print(f"{l}{w}{l}")
+    print("*"*30)
+elif c % 2!=0:
+    e =" "
+    f = (c//2)*"*"
+    fk= len(f)*"*"+"*"
+    print("*"*30)
+    
+    print(f"{fk}{w}{f}")
+    print("*"*30)
