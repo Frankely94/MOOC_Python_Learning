@@ -1,4 +1,4 @@
-
+'''
 mean = 0
 add = 0
 numbers = 0
@@ -28,7 +28,7 @@ print(f'Positive numbers {p}')
 print(f'Negative numbers {n}')
 
               
-
+'''
 w = input('Word: ')
 c = (len(w)-30)*(-1)
  
@@ -45,3 +45,6 @@ elif c % 2!=0:
     
     print(f"{fk}{w}{f}")
     print("*"*30)
+
+if len(l) > 0 :
+    for x in range(1,len(l))

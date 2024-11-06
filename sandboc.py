@@ -552,19 +552,49 @@ while len(s)< n: #dos
 # I will need three #print 
 w = input('Word: ')
 c = (len(w)-30)*(-1)
- 
+e =" "
 if c % 2 ==0:
     l = (c//2)*"*"
-    print("*"*30)
-    print(f"{l}{w}{l}")
-    print("*"*30)
+    # this part is to create blank spaces in the right side.
+
+    l = list(l) # for the left side
+    
+    ll = list(l) # for the right side
+    if len(l)>0:
+        for i in range(1,len(l)):
+            l[i]=e
+        fin="".join(l)
+        # this part is to create blank spaces in the left side.
+        for b in range(0,(len(l)-1)):
+            
+            ll[b]=e
+        fi ="".join(ll)
+
+        print("*"*30)
+        print(f"{fin}{w}{fi}")
+        print("*"*30)
 elif c % 2!=0:
-    e =" "
-    f = (c//2)*"*"
-    fk= len(f)*"*"+"*"
-    print("*"*30)
-    print(f"{fk}{w}{f}")
-    print("*"*30)
+    f = (c//2)*"*"  # this variable, divide the number into half and discard the reminder e.i : 23//2 = 12
+    fk= len(f)*"*"+"*" # since in the other side I need 13 to make the whole 30, I added one "*"
+
+    f = list(f)
+    fk=list(fk)
+
+    if len(f)> 0:
+
+
+        for k in range(1,(len(f)+1)):
+            fk[k]=e
+        left = "".join(fk)
+
+        for o in range(0,(len(f)-1)):
+            f[o]=e
+        right = "".join(f)
+
+
+        print("*"*30)
+        print(f"{left}{w}{right}")
+        print("*"*30)
     
    
 
