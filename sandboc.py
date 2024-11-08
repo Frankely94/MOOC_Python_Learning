@@ -543,7 +543,7 @@ while len(s)< n: #dos
         break
 #print(f"{b*n}{s}" )      
     
-'''        
+     
     
 #######################################################################################
 
@@ -565,7 +565,7 @@ if c % 2 ==0:
             l[i]=e
         fin="".join(l)
         # this part is to create blank spaces in the left side.
-        for b in range(0,(len(l)-1)):
+        for b in range(0,(len(l)-1)): # the -1 is to not to touch the las element 
             
             ll[b]=e
         fi ="".join(ll)
@@ -583,7 +583,7 @@ elif c % 2!=0:
     if len(f)> 0:
 
 
-        for k in range(1,(len(f)+1)):
+        for k in range(1,(len(f)+1)): 
             fk[k]=e
         left = "".join(fk)
 
@@ -595,13 +595,67 @@ elif c % 2!=0:
         print("*"*30)
         print(f"{left}{w}{right}")
         print("*"*30)
-    
    
+  #######################################################################################
+st = input("Please type in a string: ")
+#    test
+index = len(st)
+x = 0
+p = 1 
+while index > 0:
+    print(st[x:p])
+    p = p +1
+    
+    index = index -1
 
-        
+
+ #######################################################################################
+st = input("Please type in a string: ")
+#    test
+index = len(st)
+
+p = -1
+
+
+while index > 0:
+    print(st[p:])
+
+    p = p -1
+    index = index -1
+
+
+''' 
+ #######################################################################################
+
+a = "a"
+e= "e"
+o = "o"
+while True:
+    substring = input("Please type in a string:  ")
+    if a in substring and e in substring and o in substring :
+        print(f"{a}found")
+        print(f"{e}found")
+        print(f"{o}found")
+        break
+    elif  a in substring and e not in substring and o not in substring:
+        print(f"{a}found")
+        print(f"{e} not found")
+        print(f"{o} not found")
+        break
+    elif  a not in substring and e  in substring and o not in substring:
+        print(f"{e} not found")
+        print(f"{e} found")
+        print(f"{o} not found")
+        break
+    elif  a not in substring and e not in substring and o  in substring:
+        print(f"{a} notfound")
+        print(f"{e} not found")
+        print(f"{o} found")
+        break
+    else:
+        break    
        
 
-        
     
    
 
