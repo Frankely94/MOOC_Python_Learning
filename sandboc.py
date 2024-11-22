@@ -676,29 +676,59 @@ while True:
         print('')
         break
 
-''' 
+
  #######################################################################################
 
 
 
+word = input("Word: ")
+while True:
+    if len(word) == 0:
+        break
+    print(word)
+    word = word[2:]
+
+
+
+
+
+
 word = input("Please type in a word: ")
+car = input("Please type in a character: ")
+
+while True:
+    if len(word) ==0:
+        break
+    
+    
+    for x in range(len(word)):
+        
+        if word[x] == car:
+            if len(word[x:])>2:
+             print(word[x:x+3])
+    break   
+       
+ '''     
+####################################################################################### 
+word = input("Please type in a word: ")
+car = input("Please type in a character: ")
 
 
 while True:
-    car = input("Please type in a character: ")
-    index = word.find(car)
-    x = index# print the index after the word that needs to be found to see if there are more caqracters.
-    while len(word[x:])>2:
-       
-        print(word[x])
-        x = x + (x+3)
-       
+    
+    if car in word:
+        print(word[car])
+           
+
+
+            
         
-    else:
-        print('')
-        break
-   
+        
+        
+        
 
-
-
-
+       
+             
+    break   
+  # if x+2 = to the letter give me tha index  
+  # loook fr umber above tha index     
