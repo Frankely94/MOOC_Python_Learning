@@ -708,7 +708,7 @@ while True:
              print(word[x:x+3])
     break   
        
- '''     
+
 ####################################################################################### 
 word = input("Please type in a word: ")
 car = input("Please type in a character: ")
@@ -716,19 +716,28 @@ car = input("Please type in a character: ")
 
 while True:
     
-    if car in word:
-        print(word[car])
-           
-
-
+    b = word.find(car)
+    #abcabc
+    #methodology
+    for c in range(len(word)):
+        
+        if c > b+len(car) and word[c:c+len(car)]==car:
+            print(f'The second occurrence of the substring is at index {c}.')
+            break
+        elif c > b+len(car) and len(word[c:c+len(car)])!=len(car):
             
+            print('The substring does not occur twice in the string.')
+            break
+        elif len(word)==len(car) or len(car)>len(word):
+            print('The substring does not occur twice in the string.')
+            break
         
-        
-        
-        
-
-       
              
     break   
-  # if x+2 = to the letter give me tha index  
-  # loook fr umber above tha index     
+
+
+       
+ '''     
+####################################################################################### 
+
+
