@@ -737,7 +737,48 @@ while True:
 
 
        
- '''     
+     
 ####################################################################################### 
+number = int(input('Please type in a number:'))
 
+s = 1
+while s <=number: # outer loop. will exceute after the sencod loop. 
+    f= 1
+    while f<=number: # this is the inner loop. will execute first that the outer loop. 
+        print(f"{s} x {f} = {s*f}") 
+        f = f+1
+    s= s+1    
+    
+'''     
+#######################################################################################        
+   
+sentence = input('Please type in a sentence:')
+
+j = sentence.index(" ") 
+print(j)
+x=0
+while x <= len(sentence):
+    h=0
+    while h<len(sentence):
+        print(sentence[0])
+        h=h+1
+    
+    print(sentence[x:j])
+    sentence = sentence[x:]
+    break
+    
+
+
+
+
+
+
+   
+    
+    
+
+
+    
+    
+        
 
