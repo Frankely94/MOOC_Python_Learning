@@ -753,21 +753,19 @@ while s <=number: # outer loop. will exceute after the sencod loop.
 #######################################################################################        
    
 sentence = input('Please type in a sentence:')
+y = len(sentence)
 
-j = sentence.index(" ") 
-print(j)
-x=0
-while x <= len(sentence):
-    h=0
-    while h<len(sentence):
-        print(sentence[0])
-        h=h+1
+while y >=0:
+    u = sentence.index(" ")
     
-    print(sentence[x:j])
-    sentence = sentence[x:]
-    break
-    
+    sentence = sentence[u+1:]
+    if " " not in sentence:
+        break
+    print(sentence[0])
+    y = y -1
 
+
+    
 
 
 
