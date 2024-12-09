@@ -748,35 +748,47 @@ while s <=number: # outer loop. will exceute after the sencod loop.
         print(f"{s} x {f} = {s*f}") 
         f = f+1
     s= s+1    
-    
-'''     
+     
 #######################################################################################        
-   
-sentence = input('Please type in a sentence:')
-y = len(sentence)
+t =input("sentence:")
+t = list(t)
+t.append(" ")
+h = t.count(" ")
 
-while y >=0:
-    u = sentence.index(" ")
+
+while len(t)> 0:
+        i = t.index(" ")
+        if i !=-1:
+            print(t[0])
+            t = t[i+1:]
+      
+       
+ '''     
+#######################################################################################         
+
+number = int(input("Please type in a number: "))
+
+while number !=0 and number!=-1:
+    number = int(input("Please type in a number: "))
     
-    sentence = sentence[u+1:]
-    if " " not in sentence:
+    while number > 0:
+        c=0
+        print(f"The factorial of the number {number} is {c}")
+
+        number -= 1
+        c=0
+        c = c*number
+        
         break
-    print(sentence[0])
-    y = y -1
-
-
+            
+     
+    print("Thanks and bye!")
+  
+        
+ 
+    
+        
     
 
-
-
-
-
-   
-    
-    
-
-
-    
-    
         
 
