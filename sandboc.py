@@ -762,33 +762,96 @@ while len(t)> 0:
             print(t[0])
             t = t[i+1:]
       
-       
- '''     
+  
 #######################################################################################         
 
-number = int(input("Please type in a number: "))
 
-while number !=0 and number!=-1:
+while True: 
     number = int(input("Please type in a number: "))
-    
-    while number > 0:
-        c=0
-        print(f"The factorial of the number {number} is {c}")
-
-        number -= 1
-        c=0
-        c = c*number
-        
+    h= number
+    if number <=0 :
+        print("Thanks and bye!")
         break
+        
+    b= 1
+    c=1   
+    while b<=number:
+         
+        c = c*b
+        b= b+1
+        
+    print(f"The factorial of the number {h} is {c}")
+
+
+   
+#############################Functions################################################     
+
+
+def first_character(text):
+    print(text[0])
+
+
+
+if __name__ == "__main__":
+    first_character('python')
+    first_character('yellow')
+    first_character('tomorrow')
+    first_character('heliotrope')
+    first_character('open')
+    first_character('night')  
+    
+
+#######################################################################
+
+def chessboard(num):
+    b=1
+    while b <=num:
+
+        c=b+1
+        while c<=num+b:
+            if c%2==0:
+                print("1",end="")
+            if  c%2!=0:
+                print("0",end="")
+            c=c+1
+
+
+
+
+
+        print()
+        b=b+1
+
+
+if __name__ == "__main__":
+    chessboard(6)
+
+        
+
+'''
+############################################################
+
+
+def squared(word,num):
+
+    b= 1 
+    while b<=num:
+        
+        
+        c = 1
+        while c<=num:
             
-     
-    print("Thanks and bye!")
-  
-        
- 
-    
-        
-    
+            
+            print(word[:num])
+            word=word[c:]+word[0]
+            c=c+1
+            break
+            # need last element 
+        b=b+1
 
-        
 
+
+
+if __name__ == "__main__":
+    squared("aybabtu", 5)
+    
